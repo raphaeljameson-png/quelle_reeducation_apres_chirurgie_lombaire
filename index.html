@@ -1,221 +1,446 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rééducation après Chirurgie Lombaire : Guide & FAQ | EFR Paris</title>
-  <meta name="description" content="Tout savoir sur la rééducation après une opération du dos (hernie discale, sténose, arthrodèse). Reprise du sport, conduite, exercices et FAQ de 15 questions."/>
-  <link rel="canonical" href="https://raphaeljameson-png.github.io/reeducation-lombaire/"/>
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Quand reprendre la conduite après une chirurgie lombaire ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La conduite est généralement autorisée entre la 3ème et la 4ème semaine post-opératoire, sous réserve de ne pas ressentir de douleur inhibitrice lors d'un freinage d'urgence."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Quel sport pratiquer après une opération du dos ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La marche est recommandée dès le premier jour. Le dos crawlé est autorisé à 6 semaines, le vélo à 2 mois et les sports à rotation (golf, tennis) après 4 à 6 mois."
-        }
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Rééducation après Chirurgie Lombaire : Guide, Sport et Conduite | EFR</title>
+<meta name="description" content="Guide complet de rééducation après une opération lombaire (voie antérieure ou postérieure). Exercices, reprise du sport (natation, golf, vélo), conduite et FAQ."/>
+<link rel="canonical" href="https://raphaeljameson-png.github.io/reeducation-chirurgie-lombaire/" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quand puis-je reprendre le sport (natation, vélo, golf) après une opération lombaire ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La marche débute le jour même. La natation (dos crawlé) et le vélo d'appartement sont possibles vers 4 à 6 semaines. Les sports de rotation comme le golf ou le tennis demandent 3 à 6 mois de cicatrisation."
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "Question",
+      "name": "J'ai encore des douleurs et des fourmillements dans la jambe, est-ce normal ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, c'est très fréquent. Le nerf a été comprimé pendant longtemps et garde une 'mémoire' de la douleur. En se réveillant, il peut provoquer des fourmillements ou brûlures qui s'estomperont avec le temps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quand puis-je reconduire ma voiture après une arthrodèse ou hernie discale ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La conduite est généralement autorisée entre 3 et 4 semaines, à condition de ne plus prendre d'antalgiques forts et d'être capable d'effectuer un freinage d'urgence sans douleur."
+      }
+    }
+  ]
+}
+</script>
 
 <style>
   :root {
-    --ink: #111;
-    --muted: #555;
-    --accent: #0b6fa4;
-    --accent2: #22b8b8;
-    --bg: #f3f5f7;
-    --border: #d9d9d9;
+    --ink:#111;
+    --muted:#444;
+    --accent:#0b6fa4;      /* bleu */
+    --accent2:#22b8b8;     /* turquoise */
+    --bg:#fff;
+    --border:#d9d9d9;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    background: var(--bg);
+    background: #f3f5f7;
     color: var(--ink);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,Helvetica,sans-serif;
+    line-height: 1.35;
   }
-  .header { background: #fff; border-bottom: 3px solid var(--accent); padding: 30px 20px; text-align: center; }
-  .header h1 { margin: 0; font-size: 24px; color: var(--accent); text-transform: uppercase; }
-  .header p { margin: 10px 0 0 0; font-size: 16px; font-weight: 600; color: var(--accent2); }
+  .toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: rgba(255,255,255,.92);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(6px);
+  }
+  .toolbar-inner {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 10px 16px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .toolbar .btn {
+    appearance: none;
+    border: 1px solid var(--border);
+    background: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .toolbar .btn.primary {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: #fff;
+  }
+  .wrap {
+    max-width: 980px;
+    margin: 22px auto;
+    padding: 0 16px 28px;
+  }
+  .page {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 26px 34px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.06);
+  }
+  header.top {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 16px;
+    align-items: center;
+    padding-bottom: 14px;
+    border-bottom: 2px solid var(--accent);
+  }
+  header.top img {
+    width: 110px;
+    height: auto;
+  }
+  .brand .brand-name {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: .2px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .brand .line {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 2px;
+  }
+  .doc-title {
+    margin-top: 18px;
+    border-left: 6px solid var(--accent2);
+    padding-left: 14px;
+  }
+  .doc-title h1 {
+    margin: 0;
+    font-size: 22px;
+  }
+  .doc-title .meta {
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: 13px;
+    display: flex;
+    gap: 30px;
+  }
 
-  .container { max-width: 900px; margin: 30px auto; padding: 0 15px 60px; }
-
-  .section { background: #fff; border-radius: 12px; border: 1px solid var(--border); padding: 30px; margin-bottom: 25px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-  .section h2 { font-size: 20px; font-weight: 800; color: var(--accent); margin-bottom: 20px; border-bottom: 2px solid #f0f0f0; padding-bottom: 12px; }
+  h2.chapter-title {
+    margin: 22px 0 8px;
+    font-size: 16px;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+  h3.section-title, h3.faq-q {
+    margin: 14px 0 6px;
+    font-size: 14px;
+    color: var(--ink);
+  }
   
-  /* FAQ SEO */
-  .faq-item { margin-bottom: 20px; border-bottom: 1px solid #f9f9f9; padding-bottom: 15px; }
-  .faq-item h3 { font-size: 16px; font-weight: 700; color: var(--ink); margin: 0 0 8px 0; }
-  .faq-item p { font-size: 14.5px; color: var(--muted); margin: 0; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 8px 0 8px 18px; }
+  li { margin: 4px 0; }
 
-  table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
-  th { background: #f8f9fa; text-align: left; padding: 15px; border-bottom: 2px solid var(--accent2); color: var(--accent); }
-  td { padding: 15px; border-bottom: 1px solid #eee; }
+  .note {
+    border: 1px solid var(--border);
+    border-left: 6px solid var(--accent2);
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: #fbfeff;
+    margin: 12px 0;
+  }
+  .warn {
+    border-left-color: #d93025;
+    background: #fff9f8;
+  }
 
-  .exercise-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-  .ex-card { background: #f0f7fa; padding: 20px; border-radius: 10px; border-left: 5px solid var(--accent); }
-  .ex-card h4 { margin: 0 0 10px 0; color: var(--accent); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 14px;
+    font-size: 13px;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 8px 10px;
+    vertical-align: top;
+  }
+  th {
+    background: #f6f8fa;
+    text-align: left;
+  }
 
-  .alert-box { background: #fff5e6; border: 1px solid #ffe0b2; padding: 20px; border-radius: 10px; margin-top: 20px; }
-  .warning-text { color: #d32f2f; font-weight: 700; }
+  .hr {
+    margin: 18px 0;
+    height: 1px;
+    background: var(--border);
+    border: 0;
+  }
 
-  footer { text-align: center; padding: 40px; color: var(--muted); font-size: 13px; }
-  a { color: var(--accent); text-decoration: none; font-weight: bold; }
+  footer {
+    margin-top: 18px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  /* Print */
+  @media print {
+    body { background: white; }
+    .toolbar { display: none; }
+    .wrap { margin: 0; padding: 0; }
+    .page {
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 14mm 14mm;
+    }
+    a { color: inherit; text-decoration: none; }
+    .no-print, .no-print * { display: none !important; }
+    @page { size: A4; margin: 12mm; }
+  }
 </style>
 </head>
 <body>
-
-  <header class="header">
-    <img src="logo.png" alt="Logo Espace Francilien du Rachis" style="width: 80px; margin-bottom: 10px;">
-    <h1>Rééducation après Chirurgie Lombaire</h1>
-    <p>Guide complet pour un rétablissement optimal</p>
-  </header>
-
-  <article class="container">
-
-    <section class="section">
-      <h2>❓ Foire Aux Questions (FAQ) - 15 Réponses clés</h2>
-      
-      <div class="faq-item">
-        <h3>1. Douleurs résiduelles dans la jambe ?</h3>
-        <p>C'est normal. Le nerf décompressé cicatrise lentement. Fourmillements et brûlures s'estompent progressivement.</p>
+<div class="toolbar no-print">
+  <div class="toolbar-inner">
+    <div style="font-weight:700;">Fiche Rééducation Lombaire</div>
+    <button class="btn primary" onclick="window.print()">Imprimer / Sauvegarder PDF</button>
+  </div>
+</div>
+<div class="wrap">
+  <div class="page">
+    <header class="top">
+      <img alt="Logo Espace Francilien du Rachis" src="logo.png"/>
+      <div class="brand">
+        <div class="brand-name">ESPACE FRANCILIEN DU RACHIS</div>
+        <div class="line">95, rue de Prony — 75017 Paris | www.rachis.paris</div>
+        <div class="line">Dr Raphaël Jameson · Dr Mayalen Lamerain · Dr Christophe Travert</div>
       </div>
-
-      <div class="faq-item">
-        <h3>2. Meilleure position pour dormir ?</h3>
-        <p>Sur le dos (coussin sous les genoux) ou sur le côté (oreiller entre les jambes) pour aligner les vertèbres.</p>
+    </header>
+    
+    <div class="doc-title">
+      <h1>FICHE D'INFORMATION PATIENT — Rééducation après Chirurgie Lombaire (Voies antérieures et postérieures)</h1>
+      <div class="meta">
+        <div><strong>Document remis le :</strong> ____ / ____ / ________</div>
+        <div><strong>Patient(e) :</strong> ___________________________________</div>
       </div>
+    </div>
+    
+    <div class="note">
+      Cette fiche a été conçue pour vous accompagner pas-à-pas dans votre convalescence, que vous ayez été opéré(e) par le dos (hernie discale, laminectomie, arthrodèse TLIF) ou par le ventre (arthrodèse ALIF). Elle compile les meilleurs protocoles de rééducation et répond aux questions les plus fréquentes des patients.
+    </div>
 
-      <div class="faq-item">
-        <h3>3. Quand prendre une douche ?</h3>
-        <p>Dès que le pansement est étanche (souvent J+2). Séchez par tapotements légers sans frotter.</p>
-      </div>
+    <h2 class="chapter-title">CHAPITRE 1 — LES GESTES DU QUOTIDIEN (L'ÉCOLE DU DOS)</h2>
+    <p>Dès votre retour à domicile, votre objectif n'est pas de faire des efforts intenses, mais d'adopter des postures qui protègent votre cicatrisation tissulaire et osseuse. La règle d'or : <strong>Ne jamais combiner une flexion en avant avec une torsion du tronc (La règle du "No Bending, No Twisting").</strong></p>
+    
+    <h3 class="section-title">1.1 Se lever et se coucher : "La technique de la bûche"</h3>
+    <ul>
+      <li><strong>Pour se lever :</strong> Allongez-vous sur le dos, genoux pliés. Basculez sur le côté <strong>en bloc</strong> (épaules et bassin en même temps). Laissez glisser vos jambes hors du lit tout en poussant sur vos bras pour redresser votre buste.</li>
+      <li><strong>Pour se coucher :</strong> Asseyez-vous au bord du lit. Basculez le buste sur le côté en vous retenant avec les bras, tout en montant les deux jambes en même temps. Roulez sur le dos.</li>
+    </ul>
+    
+    <h3 class="section-title">1.2 S'asseoir et se baisser</h3>
+    <ul>
+      <li><strong>La position assise :</strong> Privilégiez des sièges fermes et hauts. Fuyez les canapés mous où le bassin s'enfonce, car cela inverse votre cambrure lombaire naturelle. Ne restez pas assis plus de 30 à 45 minutes sans vous lever.</li>
+      <li><strong>Mettre ses chaussettes :</strong> Asseyez-vous et ramenez votre cheville sur le genou opposé. Ne vous penchez jamais en avant les jambes tendues.</li>
+      <li><strong>Ramasser un objet :</strong> Utilisez la position du "chevalier servant" (un genou à terre, dos droit) ou du squat (pliez les genoux en gardant le dos verrouillé).</li>
+    </ul>
 
-      <div class="faq-item">
-        <h3>4. Monter les escaliers ?</h3>
-        <p>Oui, dès le retour. Montez marche par marche en utilisant la rampe pour la sécurité.</p>
-      </div>
+    <h2 class="chapter-title">CHAPITRE 2 — CHRONOLOGIE DE LA RÉÉDUCATION (LES 3 PHASES)</h2>
+    <p>La cicatrisation demande du temps. Les protocoles internationaux s'accordent sur une progression en trois phases.</p>
 
-      <div class="faq-item">
-        <h3>5. Port de la ceinture lombaire ?</h3>
-        <p>Utile pour les trajets ou la marche prolongée, mais non obligatoire sauf instruction chirurgicale spécifique.</p>
-      </div>
+    <h3 class="section-title">Phase 1 : La Protection (J0 à Semaine 4)</h3>
+    <ul>
+      <li><strong>La Marche :</strong> C'est votre <strong>seule et unique rééducation</strong>. Elle prévient les phlébites, réveille les muscles et relance le transit (crucial après une opération par le ventre ALIF). Fractionnez vos marches (ex: 3 x 15 min plutôt qu'une fois 45 min).</li>
+      <li><strong>Repos :</strong> Il est normal d'être très fatigué. Alternez la marche avec le repos allongé.</li>
+      <li><strong>Interdits :</strong> Port de charges &gt; 3 kg, ménage lourd (aspirateur, repassage), course à pied. Pas de kinésithérapie active en cabinet.</li>
+    </ul>
 
-      <div class="faq-item">
-        <h3>6. Début de la kinésithérapie ?</h3>
-        <p>Entre la 3ème et 6ème semaine, après contrôle de la cicatrisation cutanée.</p>
-      </div>
+    <h3 class="section-title">Phase 2 : Le Réveil musculaire (Semaines 4 à 8)</h3>
+    <ul>
+      <li><strong>Début de la Kinésithérapie :</strong> Après validation du chirurgien. Le kinésithérapeute travaillera sur le relâchement des contractures (massages doux) et l'assouplissement des jambes.</li>
+      <li><strong>Gainage statique :</strong> Début du renforcement de la sangle abdominale profonde (le muscle transverse) pour créer votre "corset naturel", sans mouvements de flexion brusques.</li>
+      <li><strong>Spécificité Voie Antérieure (ALIF) :</strong> Si vous avez été opéré par le ventre, les exercices ciblant les abdominaux doivent être repris avec une extrême prudence pour éviter une hernie abdominale (éventration).</li>
+    </ul>
 
-      <div class="faq-item">
-        <h3>7. Transit et gaz (Voie Antérieure) ?</h3>
-        <p>Fréquent. La marche est le meilleur remède pour relancer le système digestif.</p>
-      </div>
+    <h3 class="section-title">Phase 3 : La Fonctionnalité (Mois 3 à 6)</h3>
+    <ul>
+      <li>Intensification du renforcement (muscles spinaux et fessiers).</li>
+      <li>Travail de la proprioception (équilibre sur plateau instable).</li>
+      <li>Reprise progressive de l'ensemble de vos activités physiques et professionnelles.</li>
+    </ul>
 
-      <div class="faq-item">
-        <h3>8. Port de charges et enfants ?</h3>
-        <p>Limitez à 2kg le premier mois. Pas de port de charges lourdes avant 6 à 12 semaines.</p>
-      </div>
+    <h2 class="chapter-title">CHAPITRE 3 — EXERCICES D'AUTO-RÉÉDUCATION À DOMICILE</h2>
+    <p>À partir de la 3ème ou 4ème semaine, vous pouvez intégrer ces exercices doux à domicile, <strong>toujours en l'absence de douleur</strong>.</p>
+    <ul>
+      <li><strong>L'éveil du transverse :</strong> Allongé sur le dos, genoux pliés. Sur l'expiration, rentrez le nombril comme si vous vouliez toucher la colonne vertébrale. Maintenez 5 secondes sans bloquer la respiration. Relâchez. <em>(10 répétitions)</em>.</li>
+      <li><strong>La bascule du bassin :</strong> Dans la même position, contractez vos abdominaux pour venir plaquer le bas de votre dos contre le sol (gommer la cambrure). Relâchez doucement. <em>(10 répétitions)</em>. Cet exercice est très antalgique pour les muscles lombaires.</li>
+      <li><strong>L'étirement pyramidal :</strong> Allongé sur le dos, ramenez doucement un genou vers votre poitrine en vous aidant de vos mains. L'autre jambe reste tendue ou semi-pliée au sol. Gardez l'étirement 20 secondes. <em>(3 fois par jambe)</em>.</li>
+    </ul>
 
-      <div class="faq-item">
-        <h3>9. Activité sexuelle ?</h3>
-        <p>Possible dès que la douleur diminue (vers J+15), sans mouvements brusques du bassin.</p>
-      </div>
+    <h2 class="chapter-title">CHAPITRE 4 — VOITURE ET REPRISE DU SPORT</h2>
+    
+    <h3 class="section-title">4.1 La Voiture</h3>
+    <ul>
+      <li><strong>En tant que passager :</strong> Autorisé pour de courts trajets. Inclinez légèrement le siège. Pour sortir, pivotez les deux jambes ensemble vers l'extérieur.</li>
+      <li><strong>En tant que conducteur :</strong> La reprise se fait généralement <strong>entre 3 et 4 semaines</strong>. Deux conditions absolues : ne plus prendre d'antalgiques forts (morphiniques) qui altèrent la vigilance, et être capable de réaliser un freinage d'urgence violent sans appréhension ni douleur bloquante.</li>
+    </ul>
 
-      <div class="faq-item">
-        <h3>10. Fatigue intense ?</h3>
-        <p>La cicatrisation osseuse et nerveuse consomme beaucoup de calories. Reposez-vous sans culpabiliser.</p>
-      </div>
+    <h3 class="section-title">4.2 La Reprise des Sports</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Activité Sportive</th>
+          <th>Délai approximatif</th>
+          <th>Précautions et Conseils</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Marche / Randonnée</strong></td>
+          <td>Immédiat</td>
+          <td>Commencez sur sol plat, augmentez le dénivelé progressivement.</td>
+        </tr>
+        <tr>
+          <td><strong>Natation</strong></td>
+          <td>4 à 6 semaines</td>
+          <td>Attendre la fermeture parfaite des cicatrices. <strong>Dos crawlé ou crawl recommandés.</strong> La brasse classique (tête hors de l'eau) est fortement déconseillée car elle cambre le dos.</td>
+        </tr>
+        <tr>
+          <td><strong>Vélo d'appartement</strong></td>
+          <td>4 à 6 semaines</td>
+          <td>Réglez le guidon haut pour garder le dos droit.</td>
+        </tr>
+        <tr>
+          <td><strong>Vélo de route / VTT</strong></td>
+          <td>2 à 3 mois</td>
+          <td>Le VTT sur terrain cabossé est à éviter plus longtemps (chocs).</td>
+        </tr>
+        <tr>
+          <td><strong>Course à pied</strong></td>
+          <td>3 à 4 mois</td>
+          <td>Reprise avec des chaussures très amortissantes, sur terrain souple (terre/piste) et non sur bitume.</td>
+        </tr>
+        <tr>
+          <td><strong>Golf et Tennis</strong></td>
+          <td>3 à 6 mois</td>
+          <td>Sports exigeant des torsions puissantes. Le swing de golf doit être réadapté (demi-swing) pour tourner avec les hanches et non le dos. Éviter le service au tennis au début.</td>
+        </tr>
+      </tbody>
+    </table>
 
-      <div class="faq-item">
-        <h3>11. Assise dans le canapé ?</h3>
-        <p>À éviter pendant 1 mois. Préférez des chaises fermes et hautes pour ne pas "s'écraser".</p>
-      </div>
+    <h2 class="chapter-title">CHAPITRE 5 — LES 15 QUESTIONS FRÉQUENTES DES PATIENTS (FAQ)</h2>
+    <div class="note">
+      <h3 class="faq-q">1. J'ai encore des douleurs ou des fourmillements dans la jambe, est-ce normal ?</h3>
+      <p class="faq-answer">Oui, c'est très fréquent (radiculite). Le nerf a été écrasé, parfois pendant des mois. Après l'opération, il se "réveille" et devient inflammatoire. Ces sensations de brûlures, décharges ou fourmillements s'estompent progressivement.</p>
 
-      <div class="faq-item">
-        <h3>12. Impact du froid ?</h3>
-        <p>Le froid peut crisper les muscles. Gardez vos lombaires au chaud (vêtements adaptés).</p>
-      </div>
+      <h3 class="faq-q">2. Quelle est la meilleure position pour dormir ?</h3>
+      <p class="faq-answer">Sur le dos (placez un coussin sous vos genoux pour décambrer le dos) ou sur le côté (placez un oreiller entre vos jambes pour aligner le bassin). Le couchage sur le ventre est souvent inconfortable au début.</p>
 
-      <div class="faq-item">
-        <h3>13. Mettre ses chaussures ?</h3>
-        <p>Ne vous penchez pas en avant. Croisez la jambe ou posez le pied sur un tabouret.</p>
-      </div>
+      <h3 class="faq-q">3. Quand puis-je prendre une douche ?</h3>
+      <p class="faq-answer">Dès que le pansement est validé étanche (souvent J+2). L'eau peut ruisseler sur la cicatrice, mais séchez-la en tapotant doucement, sans frotter. Les bains sont interdits pendant 1 mois.</p>
 
-      <div class="faq-item">
-        <h3>14. Cicatrice dure ?</h3>
-        <p>Le tissu cicatriciel est dense au début. Les massages de kiné l'assoupliront après 4 semaines.</p>
-      </div>
+      <h3 class="faq-q">4. Est-ce normal d'être constipé et ballonné ?</h3>
+      <p class="faq-answer">Oui, les antalgiques forts (morphine) bloquent le transit. C'est encore plus vrai si vous avez été opéré par le ventre (voie antérieure ALIF), car les intestins ont été manipulés. Buvez beaucoup d'eau, marchez et consommez des fibres.</p>
 
-      <div class="faq-item">
-        <h3>15. Voyages longs ?</h3>
-        <p>Avion/Train autorisés à 4 semaines. Levez-vous toutes les 30 minutes impérativement.</p>
-      </div>
-    </section>
+      <h3 class="faq-q">5. Pourquoi ai-je des crampes musculaires intenses dans le dos ?</h3>
+      <p class="faq-answer">Si vous avez été opéré par voie postérieure (dans le dos), les muscles ont été écartés. Ils réagissent en se contractant (spasmes). La chaleur (bouillotte) et les décontracturants musculaires prescrits vous soulageront.</p>
 
-    <section class="section">
-      <h2>🚗 Conduite et Transports</h2>
-      <p><strong>En tant que passager :</strong> Possible immédiatement (trajets courts).<br>
-      <strong>En tant que conducteur :</strong> Reprise à <strong>3 ou 4 semaines</strong>. Testez votre capacité à freiner brusquement sur un parking avant de prendre la route.</p>
-    </section>
+      <h3 class="faq-q">6. Dois-je absolument porter un corset ou une ceinture lombaire ?</h3>
+      <p class="faq-answer">Si le chirurgien vous l'a prescrit (souvent après une arthrodèse), respectez la consigne. S'il n'y a pas de consigne stricte, une ceinture souple peut être utile ponctuellement pour soulager la fatigue lors de marches ou de trajets en voiture.</p>
 
-    <section class="section">
-      <h2>🏆 Reprise du Sport</h2>
+      <h3 class="faq-q">7. Puis-je porter mes enfants ou petits-enfants ?</h3>
+      <p class="faq-answer">Évitez de porter toute charge supérieure à 3-5 kg pendant les 4 à 6 premières semaines. Si vous souhaitez les câliner, asseyez-vous sur une chaise ferme et laissez-les monter sur vos genoux.</p>
+
+      <h3 class="faq-q">8. Quand reprendre une activité sexuelle ?</h3>
+      <p class="faq-answer">Dès que la douleur lombaire vous le permet (souvent autour de 15 jours). Privilégiez des positions passives qui n'imposent ni cambrures extrêmes ni efforts abdominaux intenses.</p>
+
+      <h3 class="faq-q">9. Pourquoi suis-je si fatigué(e) après 10 minutes de marche ?</h3>
+      <p class="faq-answer">Votre corps consacre une énergie phénoménale à réparer l'os, les tissus et les nerfs à l'intérieur. Cette fatigue globale, combinée à l'élimination de l'anesthésie, est normale le premier mois.</p>
+
+      <h3 class="faq-q">10. Ma cicatrice est dure, boursouflée et gratte, est-ce une fibrose ?</h3>
+      <p class="faq-answer">Le grattage signifie que la peau cicatrise. La sensation de "cordon dur" sous la peau est normale, c'est le tissu conjonctif en formation. Votre kiné pourra la masser (palper-rouler) après 4 semaines pour l'assouplir.</p>
+
+      <h3 class="faq-q">11. Le froid ou l'humidité augmentent-ils les douleurs ?</h3>
+      <p class="faq-answer">Beaucoup de patients le rapportent. Le froid crispe les muscles meurtris du dos. Gardez toujours la zone lombaire bien au chaud.</p>
+
+      <h3 class="faq-q">12. Est-ce que mon dos va "craquer" ou faire du bruit ?</h3>
+      <p class="faq-answer">Si vous avez eu une arthrodèse, l'os met plusieurs mois à souder le matériel. En attendant, de petits craquements ou bruits d'ajustement articulaires sont fréquents et ne signifient pas que le matériel est cassé, tant qu'il n'y a pas de douleur fulgurante associée.</p>
+
+      <h3 class="faq-q">13. Puis-je faire mon ménage (aspirateur, serpillière) ?</h3>
+      <p class="faq-answer">L'aspirateur et la serpillière sont les faux-amis du dos opéré : ils combinent une flexion en avant avec une torsion répétitive. Déléguez ces tâches le premier mois.</p>
+
+      <h3 class="faq-q">14. Puis-je voyager en avion ou en train de plus de 3 heures ?</h3>
+      <p class="faq-answer">Il est conseillé d'attendre 3 à 4 semaines. Les vibrations de l'avion ou du train entretiennent l'inflammation, et la position assise prolongée augmente le risque de phlébite. Si vous voyagez, levez-vous toutes les 45 minutes pour marcher.</p>
+
+      <h3 class="faq-q">15. J'ai une jambe plus gonflée ou plus chaude que l'autre, est-ce grave ?</h3>
+      <p class="faq-answer">S'il s'agit du mollet, avec rougeur et douleur vive, allez aux urgences (risque de phlébite). En revanche, si vous avez été opéré par le ventre (ALIF), avoir la jambe gauche légèrement plus chaude est un effet secondaire neurologique (sympathique) normal et bénin qui passera.</p>
+    </div>
+
+    <h2 class="chapter-title">CHAPITRE 6 — SIGNES D'ALERTE (QUAND CONSULTER EN URGENCE)</h2>
+    <div class="note warn">
       <table>
-        <thead>
-          <tr>
-            <th>Discipline</th>
-            <th>Délai estimé</th>
-            <th>Recommandations</th>
-          </tr>
-        </thead>
         <tbody>
-          <tr><td>Marche</td><td>J0</td><td>Progressivité (5, 10, puis 20 min).</td></tr>
-          <tr><td>Natation</td><td>6 semaines</td><td>Dos crawlé uniquement.</td></tr>
-          <tr><td>Vélo</td><td>8-10 semaines</td><td>Appartement puis route (sans chocs).</td></tr>
-          <tr><td>Golf / Tennis</td><td>4 à 6 mois</td><td>Reprise technique douce sans compétition.</td></tr>
+          <tr>
+            <td><strong>Signe d'infection :</strong> Fièvre &gt; 38.5°C persistante, rougeur importante, chaleur ou écoulement purulent au niveau de la cicatrice.</td>
+            <td><strong>Consulter rapidement.</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Signe neurologique :</strong> Apparition d'une faiblesse motrice soudaine (le pied qui lâche, impossibilité de marcher sur les pointes ou talons).</td>
+            <td><strong>URGENCE</strong> (Consultation rapide).</td>
+          </tr>
+          <tr>
+            <td><strong>Syndrome de la queue de cheval :</strong> Difficultés soudaines pour uriner (rétention) ou insensibilité de la zone génitale.</td>
+            <td><strong>URGENCE ABSOLUE.</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Risque Thrombo-embolique :</strong> Douleur et gonflement dur du mollet, ou essoufflement et douleur thoracique soudaine.</td>
+            <td><strong>URGENCE ABSOLUE (Appeler le 15).</strong></td>
+          </tr>
         </tbody>
       </table>
-    </section>
+    </div>
 
-    <section class="section">
-      <h2>🏠 Auto-rééducation</h2>
-      <div class="exercise-grid">
-        <div class="ex-card">
-          <h4>Bascule du bassin</h4>
-          <p>Allongé, genoux pliés. Plaquez les lombaires au sol en expirant. 10 répétitions.</p>
-        </div>
-        <div class="ex-card">
-          <h4>Gainage Transverse</h4>
-          <p>Rentrez le nombril vers la colonne sans bloquer la respiration. Tenez 5 secondes.</p>
-        </div>
-      </div>
-      <div class="alert-box">
-        <span class="warning-text">RÈGLE D'OR :</span> La rééducation doit être indolore. Si une douleur irradie dans la jambe, stoppez l'exercice.
-      </div>
-    </section>
+    <h2 class="chapter-title">QUESTIONS À POSER LORS DE LA CONSULTATION POST-OPÉRATOIRE</h2>
+    <ol>
+      <li>Ma cicatrisation osseuse me permet-elle de débuter la kinésithérapie active ?</li>
+      <li>Puis-je reprendre la conduite sur des distances de plus d'une heure ?</li>
+      <li>Mon poste de travail nécessite du port de charges, puis-je envisager une reprise à temps partiel thérapeutique ?</li>
+    </ol>
 
-  </article>
+    <h2 class="chapter-title">CONSENTEMENT ÉCLAIRÉ & REMISE DU DOCUMENT</h2>
+    <p>J'atteste avoir reçu cette fiche d'information et pris connaissance des consignes de rééducation et de l'École du Dos. Je m'engage à respecter les délais de cicatrisation avant la reprise du sport ou de la conduite, et à appliquer les postures de protection (Technique de la bûche) pour optimiser les résultats de l'intervention chirurgicale.</p>
+    <p><strong>Date :</strong> </p>
 
-  <footer>
-    <p>Espace Francilien du Rachis — 95, rue de Prony, 75017 Paris</p>
-    <p><a href="http://www.rachis.paris">www.rachis.paris</a></p>
-  </footer>
-
+    <div style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:10px;">
+      <p style="margin:0;flex:1;min-width:280px;"><strong>Nom et prénom du patient : </strong>________________________________</p>
+      <p style="margin:0;flex:1;min-width:280px;"><strong>Signature du patient :</strong> ________________________________</p>
+    </div>
+    
+    <footer>
+      <div><strong>Espace Francilien du Rachis</strong> — 95, rue de Prony, 75017 Paris</div>
+      <div>Dr Raphaël Jameson : dr.jameson@rachis.paris · Dr Mayalen Lamerain : dr.mlamerain@gmail.com · Dr Christophe Travert : dr.ctravert@gmail.com</div>
+      <div><strong>www.rachis.paris</strong></div>
+    </footer>
+  </div>
+</div>
 </body>
 </html>
